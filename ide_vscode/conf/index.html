@@ -410,6 +410,40 @@
     Configuration avec Python
   </a>
   
+    <nav class="md-nav" aria-label="Configuration avec Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#black" class="md-nav__link">
+    black
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pylance" class="md-nav__link">
+    pylance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isort" class="md-nav__link">
+    isort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flake8" class="md-nav__link">
+    flake8
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -792,6 +826,40 @@
     Configuration avec Python
   </a>
   
+    <nav class="md-nav" aria-label="Configuration avec Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#black" class="md-nav__link">
+    black
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pylance" class="md-nav__link">
+    pylance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isort" class="md-nav__link">
+    isort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flake8" class="md-nav__link">
+    flake8
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -880,7 +948,21 @@
 <span class="normal">39</span>
 <span class="normal">40</span>
 <span class="normal">41</span>
-<span class="normal">42</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="err">//</span> <span class="err">co</span><span class="kc">nf</span><span class="err">ig</span> <span class="err">gé</span><span class="kc">n</span><span class="err">érale</span>
   <span class="nt">&quot;editor.suggestSelection&quot;</span><span class="p">:</span> <span class="s2">&quot;first&quot;</span><span class="p">,</span>
   <span class="nt">&quot;workbench.colorTheme&quot;</span><span class="p">:</span> <span class="s2">&quot;One Dark Pro&quot;</span><span class="p">,</span>
@@ -893,15 +975,34 @@
   <span class="nt">&quot;git.autofetch&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
   <span class="nt">&quot;trailing-spaces.trimOnSave&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
   <span class="err">//</span> <span class="err">co</span><span class="kc">nf</span><span class="err">ig</span> <span class="err">py</span><span class="kc">t</span><span class="err">ho</span><span class="kc">n</span>
+  <span class="err">//</span> <span class="err">black</span>
+  <span class="nt">&quot;python.formatting.provider&quot;</span><span class="p">:</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;python.formatting.blackArgs&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;--line-length=88&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;editor.formatOnSave&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;editor.formatOnPaste&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nt">&quot;editor.formatOnType&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
   <span class="nt">&quot;editor.rulers&quot;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="mi">88</span><span class="p">,</span>
-      <span class="mi">120</span>
-    <span class="p">],</span>
+    <span class="mi">88</span><span class="p">,</span>
+    <span class="mi">120</span>
+  <span class="p">],</span>
   <span class="nt">&quot;workbench.colorCustomizations&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;editorRuler.foreground&quot;</span><span class="p">:</span> <span class="s2">&quot;#750917&quot;</span>
   <span class="p">},</span>
+  <span class="err">//</span> <span class="err">pyla</span><span class="kc">n</span><span class="err">ce</span>
   <span class="nt">&quot;python.languageServer&quot;</span><span class="p">:</span> <span class="s2">&quot;Pylance&quot;</span><span class="p">,</span>
+  <span class="err">//</span> <span class="err">isor</span><span class="kc">t</span>
   <span class="nt">&quot;python.sortImports.path&quot;</span><span class="p">:</span> <span class="s2">&quot;isort&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;python.sortImports.args&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;-sp setup.cfg&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;[python]&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;editor.codeActionsOnSave&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;source.organizeImports&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="err">//</span> <span class="kc">fla</span><span class="err">ke</span><span class="mi">8</span>
   <span class="nt">&quot;python.linting.flake8Path&quot;</span><span class="p">:</span> <span class="s2">&quot;flake8&quot;</span><span class="p">,</span>
   <span class="nt">&quot;python.linting.flake8Enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
   <span class="nt">&quot;python.linting.pylintEnabled&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -911,16 +1012,11 @@
       <span class="s2">&quot;.venv/**/*.py&quot;</span><span class="p">,</span>
       <span class="s2">&quot;**.pytest_cache/**/*.py&quot;</span>
     <span class="p">],</span>
-  <span class="nt">&quot;python.formatting.provider&quot;</span><span class="p">:</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;python.formatting.blackArgs&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">&quot;--line-length=88&quot;</span>
-  <span class="p">],</span>
+  <span class="err">//</span> <span class="err">mypy</span>
   <span class="nt">&quot;python.linting.mypyPath&quot;</span><span class="p">:</span> <span class="s2">&quot;mypy&quot;</span><span class="p">,</span>
   <span class="nt">&quot;python.linting.mypyEnabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="err">//</span> <span class="err">py</span><span class="kc">test</span>
   <span class="nt">&quot;python.testing.pytestEnabled&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;editor.formatOnSave&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;editor.formatOnPaste&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-  <span class="nt">&quot;editor.formatOnType&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
   <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
@@ -966,7 +1062,7 @@ La configuration est plutôt classique, <a href="https://www.jetbrains.com/fr-fr
 <li>Le fichier <code>settings.json</code>.</li>
 <li>Le fichier <code>setup.cfg</code>, situé à la racine du dossier.</li>
 </ol>
-<p>Le fichier <code>settings.json</code> permet de configurer vscode pour lui dire quel formateur, linter, quelle librairie de tests choisir. Le fichier <code>setup.cfg</code> permet lui de modifier le comportement des ces derniers.</p>
+<p>Le fichier <code>settings.json</code> permet de configurer vscode pour lui dire quel formateur, linter, quelle librairie de tests choisir pour vérifier la qualité du code, le fichier <code>setup.cfg</code> lui fixera les paramètres des ces derniers.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>D'autres fichiers de configurations des librairies python, comme le fichier <code>pyproject.toml</code> défini dans <a href="https://www.python.org/dev/peps/pep-0518/">PEP518</a>, qui est offciellement le fichier de configuration préféré par le formateur <code>black</code>, et aussi le fichier de configuration préféré pour le manager de dépendances et de projet <a href="https://python-poetry.org/">poetry</a>. Sauf que</p>
@@ -976,6 +1072,19 @@ La configuration est plutôt classique, <a href="https://www.jetbrains.com/fr-fr
 </ul>
 <p>Les librairies <code>isort</code>, <code>pytest</code> et <code>coverage</code> sont compatibles avec <code>pyproject.toml</code>, mais dans tous les cas on devrait garder un fichier <code>setup.cfg</code> pour <code>flake8</code> et tous ses plugins. <code>black</code> n'ayant que peu de choix dans ses configurations, autant tout mettre dans un fichier <code>setup.cfg</code>.</p>
 </div>
+<p>Dans ce fichier de configuration, on utilise donc :</p>
+<ul>
+<li><a href="https://black.readthedocs.io/en/stable/">black</a> pour le formatage du code.</li>
+<li><a href="https://pycqa.github.io/isort/">isort</a> pour les triage des imports.</li>
+<li><a href="https://flake8.pycqa.org/en/latest/">flake8</a> pour le linting.</li>
+<li><a href="https://mypy.readthedocs.io/en/stable/#">mypy</a> pour le type hinting.</li>
+<li><a href="https://docs.pytest.org/en/stable/">pytest</a> pour l'ensemble des tests unitaires, d'intégrations, etc.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ca parait évident, mais même si ces modules sont sélectionnés dans vscode, rien ne marchera s'ils ne sont pas installés dans votre environnement virtuel, environnement docker ou autre.</p>
+</div>
+<p>On reviendra plus en détails sur chacun plus tard, expliquons ce fichier de config.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1006,8 +1115,30 @@ La configuration est plutôt classique, <a href="https://www.jetbrains.com/fr-fr
 <span class="normal">28</span>
 <span class="normal">29</span>
 <span class="normal">30</span>
-<span class="normal">31</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="err">//</span> <span class="err">co</span><span class="kc">nf</span><span class="err">ig</span> <span class="err">py</span><span class="kc">t</span><span class="err">ho</span><span class="kc">n</span>
+  <span class="err">//</span> <span class="err">black</span>
+  <span class="nt">&quot;python.formatting.provider&quot;</span><span class="p">:</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;python.formatting.blackArgs&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;--line-length=88&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;editor.formatOnSave&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;editor.formatOnPaste&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nt">&quot;editor.formatOnType&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
   <span class="nt">&quot;editor.rulers&quot;</span><span class="p">:</span> <span class="p">[</span>
     <span class="mi">88</span><span class="p">,</span>
     <span class="mi">120</span>
@@ -1015,8 +1146,19 @@ La configuration est plutôt classique, <a href="https://www.jetbrains.com/fr-fr
   <span class="nt">&quot;workbench.colorCustomizations&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;editorRuler.foreground&quot;</span><span class="p">:</span> <span class="s2">&quot;#750917&quot;</span>
   <span class="p">},</span>
+  <span class="err">//</span> <span class="err">pyla</span><span class="kc">n</span><span class="err">ce</span>
   <span class="nt">&quot;python.languageServer&quot;</span><span class="p">:</span> <span class="s2">&quot;Pylance&quot;</span><span class="p">,</span>
+  <span class="err">//</span> <span class="err">isor</span><span class="kc">t</span>
   <span class="nt">&quot;python.sortImports.path&quot;</span><span class="p">:</span> <span class="s2">&quot;isort&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;python.sortImports.args&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;-sp setup.cfg&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;[python]&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;editor.codeActionsOnSave&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;source.organizeImports&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="err">//</span> <span class="kc">fla</span><span class="err">ke</span><span class="mi">8</span>
   <span class="nt">&quot;python.linting.flake8Path&quot;</span><span class="p">:</span> <span class="s2">&quot;flake8&quot;</span><span class="p">,</span>
   <span class="nt">&quot;python.linting.flake8Enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
   <span class="nt">&quot;python.linting.pylintEnabled&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -1026,19 +1168,36 @@ La configuration est plutôt classique, <a href="https://www.jetbrains.com/fr-fr
       <span class="s2">&quot;.venv/**/*.py&quot;</span><span class="p">,</span>
       <span class="s2">&quot;**.pytest_cache/**/*.py&quot;</span>
     <span class="p">],</span>
-  <span class="nt">&quot;python.formatting.provider&quot;</span><span class="p">:</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;python.formatting.blackArgs&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">&quot;--line-length=88&quot;</span>
-  <span class="p">],</span>
+  <span class="err">//</span> <span class="err">mypy</span>
   <span class="nt">&quot;python.linting.mypyPath&quot;</span><span class="p">:</span> <span class="s2">&quot;mypy&quot;</span><span class="p">,</span>
   <span class="nt">&quot;python.linting.mypyEnabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="err">//</span> <span class="err">py</span><span class="kc">test</span>
   <span class="nt">&quot;python.testing.pytestEnabled&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;editor.formatOnSave&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;editor.formatOnPaste&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-  <span class="nt">&quot;editor.formatOnType&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
   <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
+<h3 id="black">black</h3>
+<p>La première partie active black comme formateur du code.</p>
+<ul>
+<li>On fixe la longueur maximale <strong>du code</strong> (ie pas de la documentation en docstrings) à 88 caractères avec <code>python.formatting.blackArgs</code>, qui est la longueur maximale acceptée par black par défaut.</li>
+<li>On fixe le formatage du code en automatique à chaque sauvegarde, on désactive le formatage lors d'une copie ou lorsque l'on tape.</li>
+<li>Afin d'avoir un repère visuel pour la longueur du code, on crée une règle verticale à 88 caractères et une a 120 caractères via <code>"editor.rulers"</code>. La longueur de 120 caractères est un choix personnel pour la longueur maximale des commentaires (de moins en moins utilisé). On choisit la couleur de ces règles verticales via <code>"editorRuler.foreground"</code>, ici rouge.</li>
+</ul>
+<p><img alt="" src="../images/rulers.png" /></p>
+<h3 id="pylance">pylance</h3>
+<p>Pylance est un plugin de Microsoft permettant permettant un support amélioré du plugin python.</p>
+<h3 id="isort">isort</h3>
+<p>isort est un module permettant de trier par ordre alphabétique et de façon automatique dans un ordre d'importance précis. Par défaut, l'ordre d'importance est le suivant.</p>
+<ol>
+<li>FUTURE, <code>from __future__ import ...</code></li>
+<li>STDLIB, les librairies standards fournies par python de base, par exemple <code>pathlib</code></li>
+<li>THIRDPARTY, la plupart des autres librairies, numpy, pandas, etc.</li>
+<li>FIRSTPARTY, les modules provenant du projet python actuel.</li>
+<li>LOCALFOLDER, les imports locaux, généralement des imports relatifs.</li>
+</ol>
+<p><code>python.sortImports.args</code> permet de dire où se trouve le "setup path" (-sp), l'autre action automatise le trie à chaque sauvegarde.</p>
+<h3 id="flake8">flake8</h3>
+<p><code>flake8</code> est un <em>linter</em>, il permet de vérifier que la code suit bien certaines règles.</p>
                 
               
               
