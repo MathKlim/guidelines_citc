@@ -47,6 +47,7 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [Automate Python workflow using pre-commits: black and flake8](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/)
 - [Continuous Delivery for Machine Learning](https://martinfowler.com/articles/cd4ml.html#ml-pipeline-1.png)
 - [Continuous Delivery 101](https://www.gocd.org/tags/cd-101.html)
+- [GoCD User Documentation](https://docs.gocd.org/current/)
 - [GitHub Actions for perfect Python Continuous Integration](https://sourcery.ai/blog/github-actions/)
 
 ### Environnement de dev Docker dans vscode
@@ -70,4 +71,3 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [How to set up a perfect Python project](https://sourcery.ai/blog/python-best-practices/)
 - [The Magical Number Seven, Plus or Minus Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
 - [Key Kubernetes Concepts](https://towardsdatascience.com/key-kubernetes-concepts-62939f4bc08e)
-- [GoCD User Documentation](https://docs.gocd.org/current/)
