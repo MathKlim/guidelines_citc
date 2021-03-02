@@ -1,5 +1,6 @@
 site_name: Les bonnes pratiques Python
 site_author: Mathieu Klimczak
+site_url: https://mathklim.github.io/guidelines_citc/
 theme:
   name: material
   logo: images/noun_Robot_1955251.svg
