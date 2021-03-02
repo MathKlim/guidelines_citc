@@ -1,6 +1,6 @@
 # Configuration de VSCode
 
-## Configuration générique, sans Python
+## Configuration sans Python
 
 ```json
 {
@@ -50,9 +50,9 @@
   // config python
   "python.languageServer": "Pylance",
   "python.sortImports.path": "isort",
+  "python.linting.flake8Path": "flake8",
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": false,
-  "python.linting.flake8Path": "flake8",
   "python.linting.ignorePatterns": [
       ".vscode/*.py",
       "**/site-packages/**/*.py",
@@ -63,8 +63,8 @@
   "python.formatting.blackArgs": [
     "--line-length=88"
   ],
-  "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "mypy",
+  "python.linting.mypyEnabled": true,
   "python.testing.pytestEnabled" : true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,

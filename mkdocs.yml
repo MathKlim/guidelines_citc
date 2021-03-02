@@ -19,8 +19,8 @@ extra_css:
 nav:
   - Acceuil: index.md
   - IDE vscode:
-      - Configuration: vscode/conf.md
-  - Rédaction documentation:
+      - Configuration: ide_vscode/conf.md
+  - Documentation:
       - MkDocs: doc_redaction/mkdocs.md
       - Diagrammes: doc_redaction/diagrammes.md
   - Formating, Linting, Type Hinting:

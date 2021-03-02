@@ -46,7 +46,7 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [pre-commit](https://pre-commit.com/)
 - [Automate Python workflow using pre-commits: black and flake8](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/)
 - [Continuous Delivery for Machine Learning](https://martinfowler.com/articles/cd4ml.html#ml-pipeline-1.png)
-- [Continuous Délivery 101](https://www.gocd.org/tags/cd-101.html)
+- [Continuous Delivery 101](https://www.gocd.org/tags/cd-101.html)
 - [GitHub Actions for perfect Python Continuous Integration](https://sourcery.ai/blog/github-actions/)
 
 ### Environnement de dev Docker dans vscode
