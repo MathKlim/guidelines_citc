@@ -969,6 +969,12 @@ La configuration est plutôt classique, <a href="https://www.jetbrains.com/fr-fr
 <p>Le fichier <code>settings.json</code> permet de configurer vscode pour lui dire quel formateur, linter, quelle librairie de tests choisir. Le fichier <code>setup.cfg</code> permet lui de modifier le comportement des ces derniers.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>D'autres fichiers de configurations des librairies python, comme le fichier <code>pyproject.toml</code> défini dans <a href="https://www.python.org/dev/peps/pep-0518/">PEP518</a>, qui est offciellement le fichier de configuration préféré par le formateur <code>black</code>, et aussi le fichier de configuration préféré pour le manager de dépendances et de projet <a href="https://python-poetry.org/">poetry</a>. Sauf que</p>
+<ul>
+<li>les développeurs de <code>flake8</code> ont décidés qu'ils ne supporteraient pas le format <code>pyproject.toml</code>,</li>
+<li>les développeurs de <code>mypy</code> y réfléchissent...depuis 2018...</li>
+</ul>
+<p>Les librairies <code>isort</code>, <code>pytest</code> et <code>coverage</code> sont compatibles avec <code>pyproject.toml</code>, mais dans tous les cas on devrait garder un fichier <code>setup.cfg</code> pour <code>flake8</code> et tous ses plugins. <code>black</code> n'ayant que peu de choix dans ses configurations, autant tout mettre dans un fichier <code>setup.cfg</code>.</p>
 </div>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
