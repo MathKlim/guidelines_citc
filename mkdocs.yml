@@ -12,14 +12,13 @@ theme:
 plugins:
   - search:
       lang: fr
-  #- mkdocs-jupyter
-  - mknotebooks
 
 extra_css:
   - stylesheets/extra.css
 
 nav:
   - Acceuil: index.md
+  - IDE configuration vscode: vscode/conf.md
 
 
 markdown_extensions:
