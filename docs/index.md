@@ -32,6 +32,7 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [isort](https://pycqa.github.io/isort/)
 - [Black : The uncompromising code formatter](https://black.readthedocs.io/en/stable/)
 - [mypy](https://mypy.readthedocs.io/en/stable/#)
+- [rope (refactoring)](https://github.com/python-rope/rope)
 - [Static Code Analysis for Python](https://towardsdatascience.com/static-code-analysis-for-python-bdce10b8d287)
 - [Complexity Waterfall](https://sobolevn.me/2019/10/complexity-waterfall)
 - [Jones complexity](https://github.com/Miserlou/JonesComplexity)
@@ -41,6 +42,7 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 
 - [Pytest](https://docs.pytest.org/en/stable/)
 - [Coverage](https://coverage.readthedocs.io/en/v4.5.x/index.html)
+- [The tests talk](https://quii.dev/The_Tests_Talk)
 
 ### Intégration, développement continu
 - [pre-commit](https://pre-commit.com/)
@@ -49,12 +51,13 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [Continuous Delivery 101](https://www.gocd.org/tags/cd-101.html)
 - [GitHub Actions for perfect Python Continuous Integration](https://sourcery.ai/blog/github-actions/)
 
-### Environnement de dev Docker dans vscode
+### Docker
 - [Dockerize your Development Environment](https://www.youtube.com/watch?v=fPtGgOJykTM)
 - [Developing inside a Container](https://code.visualstudio.com/docs/remote/containers#_create-a-devcontainerjson-file)
 - [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
 - [Advanced Container Configuration](https://code.visualstudio.com/docs/remote/containers-advanced#_adding-a-nonroot-user-to-your-dev-container)
-
+- [Creating an API with FastAPI and Docker](https://levelup.gitconnected.com/creating-an-api-with-fastapi-and-docker-809429d778e6)
+- [Faster Docker builds with pipenv, poetry, or pip-tools](https://pythonspeed.com/articles/pipenv-docker/)
 ### Code quality
 - [Radon and code metrics](https://radon.readthedocs.io/en/latest/index.html)
 - [Métriques d'Halstead](https://fr.wikipedia.org/wiki/M%C3%A9triques_d%27Halstead)
@@ -71,3 +74,12 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [The Magical Number Seven, Plus or Minus Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
 - [Key Kubernetes Concepts](https://towardsdatascience.com/key-kubernetes-concepts-62939f4bc08e)
 - [GoCD User Documentation](https://docs.gocd.org/current/)
+- [Starting New Python Project in VSCode](https://zhauniarovich.com/post/2020/2020-04-starting-new-python-project/)
+- [Configuring Python Workspace: Poetry](https://zhauniarovich.com/post/2020/2020-02-configuring-python-workspace-p2/#data-analysis-workflow)
+### Data Versioning
+
+- [DVC](https://dvc.org/)
+- [Data Version Control With Python and DVC](https://realpython.com/python-data-version-control/#set-up-your-working-environment)
+
+### MLOps
+- [MLOps: Model Monitoring 101](https://towardsdatascience.com/mlops-model-monitoring-101-46de6a578e03)
