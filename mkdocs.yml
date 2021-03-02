@@ -18,7 +18,25 @@ extra_css:
 
 nav:
   - Acceuil: index.md
-  - IDE configuration vscode: vscode/conf.md
+  - IDE vscode:
+      - Configuration: vscode/conf.md
+  - Rédaction documentation:
+      - MkDocs: doc_redaction/mkdocs.md
+      - Diagrammes: doc_redaction/diagrammes.md
+  - Formating, Linting, Type Hinting:
+      - Formating: format_lint_hint/format.md
+      - Linting: format_lint_hint/lint.md
+      - Hint: format_lint_hint/hint.md
+  - Tests:
+      - Test unitaire: testing/unittests.md
+  - CI/CD:
+      - Pre-commit: cicd/precommit.md
+  - Docker:
+      - Environnement de dev: docker/dev_env.md
+  - Code quality:
+      - Radon: code_quality/radon.md
+  - Code security:
+      - Bandit: code_security/bandit.md
 
 
 markdown_extensions:

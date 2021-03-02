@@ -19,7 +19,7 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [Code. Simply. Clearly. Calmly.](https://calmcode.io/)
 
 ### IDE configuration vscode
-### Rédaction Documentation Python
+### Rédaction documentation Python
 - [MkDocs](https://www.mkdocs.org/)
 - [MkDocs-Material](https://squidfunk.github.io/mkdocs-material/)
 - [mkdocstrings](https://mkdocstrings.github.io/)
