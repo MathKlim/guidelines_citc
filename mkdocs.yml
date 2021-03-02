@@ -1,0 +1,45 @@
+site_name: Les bonnes pratiques Python
+site_author: Mathieu Klimczak
+theme:
+  name: material
+  logo: images/noun_Robot_1955251.svg
+  language: fr
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+
+plugins:
+  - search:
+      lang: fr
+  #- mkdocs-jupyter
+  - mknotebooks
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Acceuil: index.md
+
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - attr_list
+
+  # config pour latex
+  - pymdownx.arithmatex:
+      generic: true
+
+
+# config pour latex
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
