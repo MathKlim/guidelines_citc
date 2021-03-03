@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://mathklim.github.io/guidelines_citc/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/ide_vscode/conf/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/doc_redaction/mkdocs/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/doc_redaction/diagrammes/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/format_lint_hint/format/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/format_lint_hint/lint/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/format_lint_hint/hint/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/testing/unittests/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/cicd/precommit/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/docker/dev_env/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/code_quality/radon/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mathklim.github.io/guidelines_citc/code_security/bandit/</loc>
-     <lastmod>2021-03-02</lastmod>
+     <lastmod>2021-03-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

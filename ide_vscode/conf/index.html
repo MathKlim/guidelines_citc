@@ -441,6 +441,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mypy" class="md-nav__link">
+    mypy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest" class="md-nav__link">
+    pytest
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -857,6 +871,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mypy" class="md-nav__link">
+    mypy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest" class="md-nav__link">
+    pytest
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1191,13 +1219,45 @@ La configuration est plutôt classique, <a href="https://www.jetbrains.com/fr-fr
 <ol>
 <li>FUTURE, <code>from __future__ import ...</code></li>
 <li>STDLIB, les librairies standards fournies par python de base, par exemple <code>pathlib</code></li>
-<li>THIRDPARTY, la plupart des autres librairies, numpy, pandas, etc.</li>
+<li>THIRDPARTY, la plupart des autres librairies, numpy, pandas, etc (celles qui ont besoin d'un <code>pip install ...</code> ou <code>conda install ...</code>).</li>
 <li>FIRSTPARTY, les modules provenant du projet python actuel.</li>
-<li>LOCALFOLDER, les imports locaux, généralement des imports relatifs.</li>
+<li>LOCALFOLDER, les imports locaux, généralement des imports avec des chemins relatifs.</li>
 </ol>
-<p><code>python.sortImports.args</code> permet de dire où se trouve le "setup path" (-sp), l'autre action automatise le trie à chaque sauvegarde.</p>
+<p><code>python.sortImports.args</code> permet de dire où se trouve le "setup path" (-sp), l'autre action permet d'automatiser le tri à chaque sauvegarde, similaire doc à celle pour black.</p>
 <h3 id="flake8">flake8</h3>
-<p><code>flake8</code> est un <em>linter</em>, il permet de vérifier que la code suit bien certaines règles.</p>
+<p><code>flake8</code> est un <em>linter</em>, il permet de vérifier que la code suit bien certaines règles de syntaxes. Pour citer <a href="https://en.wikipedia.org/wiki/Lint_(software)">wikipédia</a> au lieu de le paraphraser :</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors, and suspicious constructs. The term originates from a Unix utility that examined C language source code.</p>
+</div>
+<p><code>black</code> formate le code selon certaines règles qui lui sont propres, par exemple les strings sont toutes définies entre doubles apostrophes <code>"</code>, l'anglais utilisant déjà les apostrophes simples <code>'</code> pour le possessif ou pour les abbréviations, cela évite les problèmes de conflits.</p>
+<p><code>flake8</code> peut être configuré pour s'adapter aux règles de <code>black</code>, et prendre en charge d'autres plugins, comme <code>wemake-python-styleguide</code> qui permet par exemple aussi de vérifier la compléxité des fonctions.</p>
+<p>D'autres linter sont disponibles dans vscode, comme <code>pylint</code>, <code>"python.linting.pylintEnabled": false</code> le désactive, les lignes de configs suivantes désactivent flake8 pour certains répertoires.</p>
+<h3 id="mypy">mypy</h3>
+<p><code>mypy</code> permet de faire du 'type hinting", en d'autres termes il permet de définir le type de variables que l'on aura en entrée d'une fonction, et en déduira si cette fonction est cohérente.</p>
+<p>Voici un exemple classique de fonction.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+</code></pre></div>
+</td></tr></table>
+<p>Maintenant avec du type hinting, <strong>mais une erreur</strong>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+</code></pre></div>
+</td></tr></table>
+<p><code>mypy</code> retournera une erreur, en disant que cette somme est incohérente.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+</code></pre></div>
+</td></tr></table>
+<p>Cette fonction là sera validée.</p>
+<p><code>mypy</code> est une aide supplémentaire pour la compréhension des fonctions, mais aussi pour la rédaction des docstrings car ces décorations seront directement récupérées par <code>mkdocstrings</code> et le plugin <code>Python Docstring Generator</code> de vscode.</p>
+<p><code>mypy</code> étant compatible avec <code>flake8</code>, <code>"python.linting.mypyEnabled": true</code> active cette compatibilité en permettant de recevoir les messages de <code>mypy</code> via des messages <code>flake8</code> dans vscode.</p>
+<h3 id="pytest">pytest</h3>
+<p>Librairie pour les tests python.</p>
                 
               
               
