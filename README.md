@@ -45,10 +45,12 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [The tests talk](https://quii.dev/The_Tests_Talk)
 
 ### Intégration, développement continu
+- [Gestion des dépendances](https://dependabot.com/)
 - [pre-commit](https://pre-commit.com/)
 - [Automate Python workflow using pre-commits: black and flake8](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/)
 - [Continuous Delivery for Machine Learning](https://martinfowler.com/articles/cd4ml.html#ml-pipeline-1.png)
 - [Continuous Delivery 101](https://www.gocd.org/tags/cd-101.html)
+- [GoCD User Documentation](https://docs.gocd.org/current/)
 - [GitHub Actions for perfect Python Continuous Integration](https://sourcery.ai/blog/github-actions/)
 
 ### Docker
@@ -76,10 +78,12 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [GoCD User Documentation](https://docs.gocd.org/current/)
 - [Starting New Python Project in VSCode](https://zhauniarovich.com/post/2020/2020-04-starting-new-python-project/)
 - [Configuring Python Workspace: Poetry](https://zhauniarovich.com/post/2020/2020-02-configuring-python-workspace-p2/#data-analysis-workflow)
-### Data Versioning
 
+### MLOps, Data Versioning
+- [MLOps: Model Monitoring 101](https://towardsdatascience.com/mlops-model-monitoring-101-46de6a578e03)
 - [DVC](https://dvc.org/)
 - [Data Version Control With Python and DVC](https://realpython.com/python-data-version-control/#set-up-your-working-environment)
 
-### MLOps
-- [MLOps: Model Monitoring 101](https://towardsdatascience.com/mlops-model-monitoring-101-46de6a578e03)
+### Mise en production avec FastAPI
+
+### packaging avec poetry

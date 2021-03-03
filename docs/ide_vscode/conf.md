@@ -214,16 +214,56 @@ isort est un module permettant de trier par ordre alphabétique et de façon aut
 
 1. FUTURE, `from __future__ import ...`
 2. STDLIB, les librairies standards fournies par python de base, par exemple `pathlib`
-3. THIRDPARTY, la plupart des autres librairies, numpy, pandas, etc.
+3. THIRDPARTY, la plupart des autres librairies, numpy, pandas, etc (celles qui ont besoin d'un `pip install ...` ou `conda install ...`).
 4. FIRSTPARTY, les modules provenant du projet python actuel.
-5. LOCALFOLDER, les imports locaux, généralement des imports relatifs.
+5. LOCALFOLDER, les imports locaux, généralement des imports avec des chemins relatifs.
 
-`python.sortImports.args` permet de dire où se trouve le "setup path" (-sp), l'autre action automatise le trie à chaque sauvegarde.
+`python.sortImports.args` permet de dire où se trouve le "setup path" (-sp), l'autre action permet d'automatiser le tri à chaque sauvegarde, similaire doc à celle pour black.
 
 ### flake8
 
-`flake8` est un *linter*, il permet de vérifier que la code suit bien certaines règles.
+`flake8` est un *linter*, il permet de vérifier que la code suit bien certaines règles de syntaxes. Pour citer [wikipédia](https://en.wikipedia.org/wiki/Lint_(software)) au lieu de le paraphraser :
+
+!!! quote
+    lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors, and suspicious constructs. The term originates from a Unix utility that examined C language source code.
+
+`black` formate le code selon certaines règles qui lui sont propres, par exemple les strings sont toutes définies entre doubles apostrophes `"`, l'anglais utilisant déjà les apostrophes simples `'` pour le possessif ou pour les abbréviations, cela évite les problèmes de conflits.
+
+`flake8` peut être configuré pour s'adapter aux règles de `black`, et prendre en charge d'autres plugins, comme `wemake-python-styleguide` qui permet par exemple aussi de vérifier la compléxité des fonctions.
+
+D'autres linter sont disponibles dans vscode, comme `pylint`, `"python.linting.pylintEnabled": false` le désactive, les lignes de configs suivantes désactivent flake8 pour certains répertoires.
 
 ### mypy
 
+`mypy` permet de faire du 'type hinting", en d'autres termes il permet de définir le type de variables que l'on aura en entrée d'une fonction, et en déduira si cette fonction est cohérente.
+
+Voici un exemple classique de fonction.
+
+```python
+def sum(x,y):
+  return x+y
+```
+
+Maintenant avec du type hinting, **mais une erreur**.
+
+```python
+def sum(x: int,y: str):
+  return x+y
+```
+
+`mypy` retournera une erreur, en disant que cette somme est incohérente.
+
+```python
+def sum(x: int,y: int):
+  return x+y
+```
+
+Cette fonction là sera validée.
+
+`mypy` est une aide supplémentaire pour la compréhension des fonctions, mais aussi pour la rédaction des docstrings car ces décorations seront directement récupérées par `mkdocstrings` et le plugin `Python Docstring Generator` de vscode.
+
+`mypy` étant compatible avec `flake8`, `"python.linting.mypyEnabled": true` active cette compatibilité en permettant de recevoir les messages de `mypy` via des messages `flake8` dans vscode.
+
 ### pytest
+
+Librairie pour les tests python.

@@ -45,6 +45,7 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [The tests talk](https://quii.dev/The_Tests_Talk)
 
 ### Intégration, développement continu
+- [Gestion des dépendances](https://dependabot.com/)
 - [pre-commit](https://pre-commit.com/)
 - [Automate Python workflow using pre-commits: black and flake8](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/)
 - [Continuous Delivery for Machine Learning](https://martinfowler.com/articles/cd4ml.html#ml-pipeline-1.png)
@@ -73,18 +74,16 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 ### A trier
 - [How to set up a perfect Python project](https://sourcery.ai/blog/python-best-practices/)
 - [The Magical Number Seven, Plus or Minus Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
-<<<<<<< HEAD
-- [Key Kubernetes Concepts](https://towardsdatascience.com/key-kubernetes-concepts-62939f4bc08e)
-=======
 - [Key Kubernetes Concepts](https://towardsdatascience.com/key-kubernetes-concepts-62939f4bc08e)
 - [GoCD User Documentation](https://docs.gocd.org/current/)
 - [Starting New Python Project in VSCode](https://zhauniarovich.com/post/2020/2020-04-starting-new-python-project/)
 - [Configuring Python Workspace: Poetry](https://zhauniarovich.com/post/2020/2020-02-configuring-python-workspace-p2/#data-analysis-workflow)
-### Data Versioning
 
+### MLOps, Data Versioning
+- [MLOps: Model Monitoring 101](https://towardsdatascience.com/mlops-model-monitoring-101-46de6a578e03)
 - [DVC](https://dvc.org/)
 - [Data Version Control With Python and DVC](https://realpython.com/python-data-version-control/#set-up-your-working-environment)
 
-### MLOps
-- [MLOps: Model Monitoring 101](https://towardsdatascience.com/mlops-model-monitoring-101-46de6a578e03)
->>>>>>> 42ef51b6664a758bbb29a61826065b305ae7d0d4
+### Mise en production avec FastAPI
+
+### packaging avec poetry
