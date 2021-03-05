@@ -12,13 +12,13 @@ Ce guide pourra être enrichi par la suite de template de base pour les dossiers
 
 
 
-## Ressources
+## Ressources générales
 
 Les différentes section et ressources utilisées pour rédiger ce guide sont les suivantes.
 
 - [Code. Simply. Clearly. Calmly.](https://calmcode.io/)
 
-### IDE configuration vscode
+## Guidelines générales : ressources
 ### Rédaction documentation Python
 - [MkDocs](https://www.mkdocs.org/)
 - [MkDocs-Material](https://squidfunk.github.io/mkdocs-material/)
@@ -43,8 +43,11 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [Pytest](https://docs.pytest.org/en/stable/)
 - [Coverage](https://coverage.readthedocs.io/en/v4.5.x/index.html)
 - [The tests talk](https://quii.dev/The_Tests_Talk)
+- [code coverage](https://about.codecov.io/)
+- [The Wide World of Software Testing](https://medium.com/@nirespire/the-wide-world-of-software-testing-d38835b8c90e)
 
 ### Intégration, développement continu
+
 - [Gestion des dépendances](https://dependabot.com/)
 - [pre-commit](https://pre-commit.com/)
 - [Automate Python workflow using pre-commits: black and flake8](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/)
@@ -52,6 +55,7 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [Continuous Delivery 101](https://www.gocd.org/tags/cd-101.html)
 - [GoCD User Documentation](https://docs.gocd.org/current/)
 - [GitHub Actions for perfect Python Continuous Integration](https://sourcery.ai/blog/github-actions/)
+- [Build Bot](https://buildbot.net/)
 
 ### Docker
 - [Dockerize your Development Environment](https://www.youtube.com/watch?v=fPtGgOJykTM)
@@ -70,20 +74,45 @@ Les différentes section et ressources utilisées pour rédiger ce guide sont le
 - [Bandit](https://github.com/PyCQA/bandit)
 - [Bandit Doc](https://bandit.readthedocs.io/en/latest/index.html)
 - [Typosquatting programming language package managers](https://incolumitas.com/2016/06/08/typosquatting-package-managers/)
+- [Safety](https://github.com/pyupio/safety)
 
 ### A trier
+
 - [How to set up a perfect Python project](https://sourcery.ai/blog/python-best-practices/)
 - [The Magical Number Seven, Plus or Minus Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
 - [Key Kubernetes Concepts](https://towardsdatascience.com/key-kubernetes-concepts-62939f4bc08e)
 - [GoCD User Documentation](https://docs.gocd.org/current/)
 - [Starting New Python Project in VSCode](https://zhauniarovich.com/post/2020/2020-04-starting-new-python-project/)
 - [Configuring Python Workspace: Poetry](https://zhauniarovich.com/post/2020/2020-02-configuring-python-workspace-p2/#data-analysis-workflow)
+- [Vulture - Find dead code](https://github.com/jendrikseipp/vulture)
 
-### MLOps, Data Versioning
-- [MLOps: Model Monitoring 101](https://towardsdatascience.com/mlops-model-monitoring-101-46de6a578e03)
+### packaging
+
+- [The Hitchhiker’s Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/)
+- [Poetry](https://python-poetry.org/)
+
+### FastAPI
+
+## Guidelines machine learning, MLOps : ressources
+
+- [Awesome MLOps](https://github.com/visenger/awesome-mlops#mlops-infra)
+- [Full Stack Deep Learning](https://fullstackdeeplearning.com/)
+
+### Data Versioning
+
 - [DVC](https://dvc.org/)
 - [Data Version Control With Python and DVC](https://realpython.com/python-data-version-control/#set-up-your-working-environment)
+- [First Impressions of Data Science Version Control (DVC)](https://christophergs.com/machine%20learning/2019/05/13/first-impressions-of-dvc/#setup)
 
-### Mise en production avec FastAPI
+### Monitoring
 
-### packaging avec poetry
+- [Monitoring is a means, not an end](https://www.robustperception.io/author/brian)
+- [MLOps: Model Monitoring 101](https://towardsdatascience.com/mlops-model-monitoring-101-46de6a578e03)
+- [Data Monitoring avec great_expectations](https://greatexpectations.io/)
+- [Great expectations — An Introduction.](https://medium.com/@abhishek_35553/great-expectations-an-introduction-b731631eecdc)
+- [TensorFlow Data Validation](https://www.tensorflow.org/tfx/data_validation/get_started)
+
+### Pipeline, workflow
+
+- [Airflow](https://airflow.apache.org/)
+- [Prefect](https://www.prefect.io/core/)
